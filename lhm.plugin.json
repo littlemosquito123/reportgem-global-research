@@ -1,0 +1,394 @@
+{
+  "identifier": "littlemosquito123-reportgem-global-research",
+  "name": "ReportGem Global Research (报告驿站)",
+  "version": "1.0.0",
+  "description": "Global investment research agent & knowledge base: search 16M+ sell-side reports from Goldman Sachs, Citi, HSBC, UBS, JPMorgan, Morgan Stanley, Barclays, Nomura and more, 5M+ reports from 200+ Chinese brokers, SEC and China company filings, earnings-call notes and in-report charts; read page-cited source passages. Remote MCP (Streamable HTTP + OAuth); new accounts get 10 free credits.",
+  "author": "ReportGem 报告驿站",
+  "authorUrl": "https://github.com/littlemosquito123",
+  "homepage": "https://www.reportgem.com/mcp.html",
+  "cloudEndpoint": "https://www.reportgem.com/mcp",
+  "icon": "https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/assets/reportgem-logo-400.png",
+  "tags": [
+    "finance",
+    "investment-research",
+    "sell-side-research",
+    "research-reports",
+    "knowledge-base",
+    "sec-filings",
+    "earnings-calls"
+  ],
+  "localizations": [
+    {
+      "locale": "zh-CN",
+      "name": "报告驿站 ReportGem · 全球投研研报智能体与知识库",
+      "description": "全球投研研报智能体与知识库：1,600 万+ 份高盛、花旗、汇丰、UBS、摩根大通、摩根士丹利、巴克莱、野村等海外投行研报，200 多家中国券商研报与期货研报 500 万+ 份，公告、会议纪要、论文、图表；五个工具检索与原文取证（带页码、可连续阅读）。远程 MCP（Streamable HTTP + OAuth），新账号赠 10 积分（30 天有效）。",
+      "tags": [
+        "金融",
+        "投研",
+        "研报",
+        "券商研报",
+        "知识库"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "search_research",
+      "description": "检索研报和论文；返回有界元数据，并在已索引正文命中时返回实际摘录。",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "description": "Company, ticker, industry, theme or keyword",
+            "maxLength": 500,
+            "minLength": 2,
+            "title": "Query",
+            "type": "string"
+          },
+          "sources": {
+            "default": [
+              "global_research",
+              "realtime_research",
+              "chinese_research",
+              "academic_papers"
+            ],
+            "description": "Source groups to search",
+            "items": {
+              "enum": [
+                "global_research",
+                "realtime_research",
+                "chinese_research",
+                "academic_papers"
+              ],
+              "type": "string"
+            },
+            "title": "Sources",
+            "type": "array"
+          },
+          "date_from": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional ISO date, YYYY-MM-DD",
+            "title": "Date From"
+          },
+          "date_to": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional ISO date, YYYY-MM-DD",
+            "title": "Date To"
+          },
+          "limit": {
+            "default": 10,
+            "maximum": 20,
+            "minimum": 1,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_researchArguments"
+      }
+    },
+    {
+      "name": "search_filings",
+      "description": "检索美国 SEC 文件和中国公司公告，并返回可核验的内部来源链接。",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "description": "Company, ticker or filing keyword",
+            "maxLength": 300,
+            "minLength": 1,
+            "title": "Query",
+            "type": "string"
+          },
+          "market": {
+            "default": "all",
+            "enum": [
+              "us",
+              "china",
+              "all"
+            ],
+            "title": "Market",
+            "type": "string"
+          },
+          "form_type": {
+            "default": "all",
+            "description": "SEC form such as 10-K, 10-Q, 8-K, 6-K, 20-F, or all",
+            "maxLength": 32,
+            "title": "Form Type",
+            "type": "string"
+          },
+          "date_from": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date From"
+          },
+          "date_to": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date To"
+          },
+          "limit": {
+            "default": 10,
+            "maximum": 20,
+            "minimum": 1,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_filingsArguments"
+      }
+    },
+    {
+      "name": "search_meetings",
+      "description": "检索全球和中国会议纪要、业绩会记录，区分正文证据与清单命中。",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "description": "Company, ticker, institution, industry or meeting keyword",
+            "maxLength": 300,
+            "minLength": 1,
+            "title": "Query",
+            "type": "string"
+          },
+          "region": {
+            "default": "all",
+            "enum": [
+              "global",
+              "china",
+              "all"
+            ],
+            "title": "Region",
+            "type": "string"
+          },
+          "output_language": {
+            "default": "en",
+            "enum": [
+              "en",
+              "zh"
+            ],
+            "title": "Output Language",
+            "type": "string"
+          },
+          "date_from": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date From"
+          },
+          "date_to": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date To"
+          },
+          "limit": {
+            "default": 10,
+            "maximum": 20,
+            "minimum": 1,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_meetingsArguments"
+      }
+    },
+    {
+      "name": "search_visuals",
+      "description": "Search indexed charts, tables, industry diagrams and research-relevant images with report/page provenance.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "description": "Natural-language description of a chart, table, diagram or image",
+            "maxLength": 300,
+            "minLength": 2,
+            "title": "Query",
+            "type": "string"
+          },
+          "visual_type": {
+            "default": "all",
+            "enum": [
+              "all",
+              "chart",
+              "table",
+              "industry_diagram",
+              "product_image",
+              "map",
+              "screenshot"
+            ],
+            "title": "Visual Type",
+            "type": "string"
+          },
+          "date_from": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date From"
+          },
+          "date_to": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Date To"
+          },
+          "limit": {
+            "default": 12,
+            "maximum": 20,
+            "minimum": 1,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_visualsArguments"
+      }
+    },
+    {
+      "name": "get_evidence",
+      "description": "返回有界真实摘录或可续读的连续正文窗口；不能把无匹配的资料当作已验证证据。",
+      "inputSchema": {
+        "properties": {
+          "source_type": {
+            "description": "Source type returned by a search tool",
+            "enum": [
+              "foreign",
+              "jinyunqi",
+              "cn",
+              "sec",
+              "china_filing",
+              "meeting",
+              "china_meeting",
+              "paper"
+            ],
+            "title": "Source Type",
+            "type": "string"
+          },
+          "source_id": {
+            "description": "Source identifier returned by a search tool",
+            "maxLength": 128,
+            "minLength": 1,
+            "title": "Source Id",
+            "type": "string"
+          },
+          "query": {
+            "default": "",
+            "description": "Claim or fact to locate in the source; optional in sequential reading mode",
+            "maxLength": 300,
+            "title": "Query",
+            "type": "string"
+          },
+          "max_passages": {
+            "default": 4,
+            "maximum": 6,
+            "minimum": 1,
+            "title": "Max Passages",
+            "type": "integer"
+          },
+          "reading_mode": {
+            "default": "relevant",
+            "description": "relevant: passages matching query; sequential: read the document in page order",
+            "enum": [
+              "relevant",
+              "sequential"
+            ],
+            "title": "Reading Mode",
+            "type": "string"
+          },
+          "start_page": {
+            "anyOf": [
+              {
+                "maximum": 1000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional first page when starting a new sequential reading",
+            "title": "Start Page"
+          },
+          "cursor": {
+            "default": "",
+            "description": "next_cursor returned by the previous sequential call; pass it back unchanged",
+            "maxLength": 64,
+            "title": "Cursor",
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_type",
+          "source_id"
+        ],
+        "type": "object",
+        "title": "get_evidenceArguments"
+      }
+    }
+  ]
+}
