@@ -2,6 +2,8 @@
 
 全球投行研报知识库 + 投研智能体工具：接进你的 AI 工具，检索、取证、连续阅读全球研报。
 
+[![ReportGem MCP connector](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research/badges/score.svg)](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research)
+
 官网：**[ReportGem 全球研报 https://www.reportgem.com](https://www.reportgem.com)** · **[报告驿站 https://www.nash-ai.cn](https://www.nash-ai.cn)** · [MCP 接入与套餐](https://www.reportgem.com/mcp.html)
 
 **定位：全球投研研报智能体和知识库。** 知识库覆盖高盛、花旗、汇丰、瑞银（UBS）、摩根大通、摩根士丹利、巴克莱、野村等数十家海外投行的研报，1,600 万+ 份，实时外文每日更新，在线研报配中文标题与中文译文；另有 200 多家中国券商研报和期货研报（500 万+ 份），以及公告、会议纪要、论文作为配套。接进 WorkBuddy、Kimi Code、Codex、Claude、扣子、Cursor 等 AI 工具，用自然语言做投研。
