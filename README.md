@@ -4,6 +4,13 @@
 
 [![ReportGem MCP connector](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research/badges/score.svg)](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research)
 
+[![Install in Cursor](https://img.shields.io/badge/Cursor-Install_MCP-000000?style=flat&logo=cursor&logoColor=white)](cursor://anysphere.cursor-deeplink/mcp/install?name=reportgem&config=eyJ1cmwiOiJodHRwczovL3d3dy5yZXBvcnRnZW0uY29tL21jcCJ9)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_MCP-0098FF?style=flat&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=reportgem&config=%7B%22name%22%3A%22reportgem%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.reportgem.com%2Fmcp%22%7D)
+[![Official MCP Registry](https://img.shields.io/badge/MCP_Registry-com.reportgem%2Fglobal--research-6A5ACD?style=flat)](https://registry.modelcontextprotocol.io/v0/servers?search=com.reportgem%2Fglobal-research)
+[![mcp.so](https://img.shields.io/badge/mcp.so-listed-2EA44F?style=flat)](https://mcp.so/servers/reportgem-global-research)
+
+一键安装：点上面的 **Cursor / VS Code** 按钮即可添加（地址 `https://www.reportgem.com/mcp`），首次调用按提示完成 OAuth 登录。Cline 用户见 [llms-install.md](llms-install.md)。
+
 官网：**[ReportGem 全球研报 https://www.reportgem.com](https://www.reportgem.com)** · **[报告驿站 https://www.nash-ai.cn](https://www.nash-ai.cn)** · [MCP 接入与套餐](https://www.reportgem.com/mcp.html)
 
 **定位：全球投研研报智能体和知识库。** 知识库覆盖高盛、花旗、汇丰、瑞银（UBS）、摩根大通、摩根士丹利、巴克莱、野村等数十家海外投行的研报，1,600 万+ 份，实时外文每日更新，在线研报配中文标题与中文译文；另有 200 多家中国券商研报和期货研报（500 万+ 份），以及公告、会议纪要、论文作为配套。接进 WorkBuddy、Kimi Code、Codex、Claude、扣子、Cursor 等 AI 工具，用自然语言做投研。
