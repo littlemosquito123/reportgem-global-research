@@ -111,7 +111,7 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 | 报告驿站（中文站） | https://www.nash-ai.cn · 实时外文 https://www.nash-ai.cn/foreign-rt.html |
 
 ### 联系
-报告驿站 https://www.nash-ai.cn · ReportGem https://www.reportgem.com · contact@reportgem.com
+报告驿站 https://www.nash-ai.cn · ReportGem https://www.reportgem.com · ww@reportgem.com
 
 ---
 
