@@ -4,7 +4,7 @@
 
 官网：**[ReportGem 全球研报 https://www.reportgem.com](https://www.reportgem.com)** · **[报告驿站 https://www.nash-ai.cn](https://www.nash-ai.cn)** · [MCP 接入与套餐](https://www.reportgem.com/mcp.html)
 
-**定位：全球投研研报智能体和知识库。** 知识库覆盖高盛、摩根士丹利、摩根大通、花旗、瑞银、汇丰、巴克莱、德意志银行、野村、大和等数十家海外投行的研报，1,600 万+ 份，实时外文每日更新，在线研报配中文标题与中文译文。另有中文券商研报、公告、会议纪要、论文作为配套。接进 WorkBuddy、Kimi Code、Codex、Claude、扣子、Cursor 等 AI 工具，用自然语言做投研。
+**定位：全球投研研报智能体和知识库。** 知识库覆盖高盛、花旗、汇丰、瑞银（UBS）、摩根大通、摩根士丹利、巴克莱、野村等数十家海外投行的研报，1,600 万+ 份，实时外文每日更新，在线研报配中文标题与中文译文；另有 200 多家中国券商研报和期货研报（500 万+ 份），以及公告、会议纪要、论文作为配套。接进 WorkBuddy、Kimi Code、Codex、Claude、扣子、Cursor 等 AI 工具，用自然语言做投研。
 
 报告驿站（中文名）与 ReportGem（英文名）是同一品牌：中文站 nash-ai.cn，国际站 reportgem.com。MCP 服务由 reportgem.com 提供，使用 ReportGem 账号（在 reportgem.com 注册）登录。
 
@@ -13,9 +13,9 @@
 **数据范围**
 | 数据 | 规模 | 更新 |
 | --- | --- | --- |
-| **全球投行研报**（高盛、摩根士丹利、摩根大通、花旗、瑞银、汇丰、巴克莱、德银、野村等） | **1,600 万+ 份**，实时外文当日可查 | 每 10 分钟同步 |
+| **全球投行研报**（高盛、花旗、汇丰、UBS、摩根大通、摩根士丹利、巴克莱、野村等） | **1,600 万+ 份**，实时外文当日可查 | 每 10 分钟同步 |
 | 全球研报中文标题与中文译文 | 随研报提供 | 随研报 |
-| 中文券商研报（配套） | 500 万+ 份 | 每日 |
+| 中国券商研报与期货研报（200 多家机构） | 500 万+ 份 | 每日 |
 | 中国上市公司公告与调研纪要 | 50 万+ 份 | 实时 |
 | 美股公告（SEC 8-K/10-K/6-K 等） | 1,500 家重点公司 | 每日 |
 | 国际 / 中国会议纪要（业绩会、路演） | 3 万+ 场 | 每日 |
@@ -97,7 +97,7 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 | --- | --- |
 | 实时外文研报（当日全球投行研报） | https://www.reportgem.com/foreign-rt.html |
 | 普通外文研报（全球投行研报库） | https://www.reportgem.com/foreign.html |
-| 中文券商研报 | https://www.nash-ai.cn （报告驿站中文站） |
+| 中国券商研报与期货研报 | https://www.nash-ai.cn （报告驿站中文站） |
 | 中国公司公告与调研纪要 | https://www.reportgem.com/company-notices.html |
 | 美股公告（SEC） | https://www.reportgem.com/sec-filings.html |
 | 国际会议纪要 / 中国会议纪要 | https://www.reportgem.com/events.html · https://www.reportgem.com/events-cn.html |
@@ -115,7 +115,7 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 
 ## English
 
-**ReportGem (报告驿站) — Global Investment Research Agent & Knowledge Base (MCP)** — a global sell-side research knowledge base and research-agent toolset for AI clients. 16 million+ reports from Goldman Sachs, Morgan Stanley, JPMorgan, Citi, UBS, HSBC, Barclays, Deutsche Bank, Nomura and more, with same-day real-time coverage, plus Chinese broker research, 500k+ company filings, SEC filings, earnings-call notes, academic papers and in-report charts. Search, read source passages with page numbers and get cited answers from Claude, Cursor, Codex or any MCP client. Free trial credits for new accounts. Endpoint: `https://www.reportgem.com/mcp` (Streamable HTTP + OAuth).
+**ReportGem (报告驿站) — Global Investment Research Agent & Knowledge Base (MCP)** — a global sell-side research knowledge base and research-agent toolset for AI clients. 16 million+ reports from Goldman Sachs, Citi, HSBC, UBS, JPMorgan, Morgan Stanley, Barclays, Nomura and more, with same-day real-time coverage, plus 5 million+ reports from 200+ Chinese brokers and futures houses, 500k+ company filings, SEC filings, earnings-call notes, academic papers and in-report charts. Search, read source passages with page numbers and get cited answers from Claude, Cursor, Codex or any MCP client. Free trial credits for new accounts. Endpoint: `https://www.reportgem.com/mcp` (Streamable HTTP + OAuth).
 
 Keywords: global research reports · investment research agent · research knowledge base · sell-side research · investment bank research · Goldman Sachs research · Morgan Stanley research · research MCP server
 
