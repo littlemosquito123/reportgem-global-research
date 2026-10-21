@@ -5,7 +5,7 @@
   "description": "Global investment research agent & knowledge base: search 16M+ sell-side reports from Goldman Sachs, Citi, HSBC, UBS, JPMorgan, Morgan Stanley, Barclays, Nomura and more, 5M+ reports from 200+ Chinese brokers, SEC and China company filings, earnings-call notes and in-report charts; read page-cited source passages. Remote MCP (Streamable HTTP + OAuth); new accounts get 10 free credits.",
   "author": "ReportGem 报告驿站",
   "authorUrl": "https://github.com/littlemosquito123",
-  "homepage": "https://www.reportgem.com/mcp.html",
+  "homepage": "https://www.reportgem.com/en/mcp.html",
   "cloudEndpoint": "https://www.reportgem.com/mcp",
   "icon": "https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/assets/reportgem-logo-400.png",
   "tags": [
