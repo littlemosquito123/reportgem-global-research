@@ -4,6 +4,10 @@
 
 A global sell-side research knowledge base exposed as a remote MCP server. Connect it to your AI assistant to search, cite and read investment research end to end.
 
+[![Available in ChatGPT](https://img.shields.io/badge/ChatGPT-Available_as_plugin-10A37F?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com/plugins/plugin_asdk_app_6ad08f5d894481918aa70fa6753479b5)
+
+**Now available in ChatGPT:** open the [ReportGem Research plugin](https://chatgpt.com/plugins/plugin_asdk_app_6ad08f5d894481918aa70fa6753479b5), click **Add / Connect**, sign in to ReportGem once, then ask in any chat, e.g. *"What did Morgan Stanley change in its Nvidia estimates this week? Cite the pages."* No setup, no API key.
+
 [![ReportGem MCP connector](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research/badges/score.svg)](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research)
 
 [![Install in Cursor](https://img.shields.io/badge/Cursor-Install_MCP-000000?style=flat&logo=cursor&logoColor=white)](cursor://anysphere.cursor-deeplink/mcp/install?name=reportgem&config=eyJ1cmwiOiJodHRwczovL3d3dy5yZXBvcnRnZW0uY29tL21jcCJ9)

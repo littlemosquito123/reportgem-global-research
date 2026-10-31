@@ -4,6 +4,10 @@
 
 全球投行研报知识库 + 投研智能体工具：接进你的 AI 工具，检索、取证、连续阅读全球研报。
 
+[![已上架 ChatGPT](https://img.shields.io/badge/ChatGPT-已上架插件-10A37F?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com/plugins/plugin_asdk_app_6ad08f5d894481918aa70fa6753479b5)
+
+**已上架 ChatGPT：** 打开 [ReportGem Research 插件](https://chatgpt.com/plugins/plugin_asdk_app_6ad08f5d894481918aa70fa6753479b5)，点 **添加 / 连接**，登录一次 ReportGem 账号，之后在任意对话里直接问，例如“摩根士丹利本周对英伟达的预测改了什么？请标出页码。”不用配置，也不用 API 密钥。
+
 [![ReportGem MCP connector](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research/badges/score.svg)](https://glama.ai/mcp/connectors/com.reportgem/report-gem-global-research)
 
 [![Install in Cursor](https://img.shields.io/badge/Cursor-Install_MCP-000000?style=flat&logo=cursor&logoColor=white)](cursor://anysphere.cursor-deeplink/mcp/install?name=reportgem&config=eyJ1cmwiOiJodHRwczovL3d3dy5yZXBvcnRnZW0uY29tL21jcCJ9)
