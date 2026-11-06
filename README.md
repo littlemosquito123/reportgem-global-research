@@ -130,7 +130,7 @@ Every MCP result links back to the source on the website, where you can also sea
 
 ## Contact
 
-ReportGem https://www.reportgem.com · ww@reportgem.com
+ReportGem (环球报告有限公司) https://www.reportgem.com · ww@reportgem.com
 
 ---
 

@@ -1,4 +1,4 @@
-# ReportGem · 全球投研研报智能体与知识库（MCP）
+# 环球报告有限公司（ReportGem） · 全球投研研报智能体与知识库（MCP）
 
 [English](README.md) | **中文**
 
@@ -123,7 +123,7 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 | 英文站 | https://www.reportgem.com/en/research-live.html |
 
 ### 联系
-ReportGem https://www.reportgem.com · ww@reportgem.com
+环球报告有限公司（ReportGem） https://www.reportgem.com · ww@reportgem.com
 
 ---
 
