@@ -1,4 +1,4 @@
-# ReportGem (报告驿站) MCP — install guide for AI agents
+# ReportGem MCP — install guide for AI agents
 
 This is a **remote** MCP server. Nothing to download or build.
 

@@ -1,4 +1,4 @@
-# ReportGem (报告驿站) · Global Investment Research Agent & Knowledge Base (MCP)
+# ReportGem · Global Investment Research Agent & Knowledge Base (MCP)
 
 **English** | [中文](README.zh-CN.md)
 
@@ -17,11 +17,11 @@ A global sell-side research knowledge base exposed as a remote MCP server. Conne
 
 One-click install: use the **Cursor / VS Code** buttons above (endpoint `https://www.reportgem.com/mcp`), then finish the OAuth login on first use. Cline users: see [llms-install.md](llms-install.md).
 
-Website: **[ReportGem https://www.reportgem.com](https://www.reportgem.com)** · Chinese site **[报告驿站 https://www.nash-ai.cn](https://www.nash-ai.cn)** · [MCP setup & pricing](https://www.reportgem.com/en/mcp.html)
+Website: **[ReportGem https://www.reportgem.com](https://www.reportgem.com)** · [MCP setup & pricing](https://www.reportgem.com/en/mcp.html)
 
 **What it is:** a research agent toolkit and knowledge base covering research from dozens of global investment banks — Goldman Sachs, Citi, HSBC, UBS, JPMorgan, Morgan Stanley, Barclays, Nomura and more — with 16 million+ reports, same-day real-time coverage and Chinese titles and translations. It also includes 5 million+ reports from 200+ Chinese brokers and futures firms, plus company filings, earnings-call notes and academic papers. Ask research questions in natural language from Claude, Cursor, Codex, Kimi Code, WorkBuddy or any MCP client; answers come with page-cited source passages.
 
-报告驿站 (Chinese name) and ReportGem (English name) are the same brand: Chinese site nash-ai.cn, international site reportgem.com. The MCP service is run on reportgem.com and uses a ReportGem account (sign up at reportgem.com).
+The MCP service is run on reportgem.com and uses a ReportGem account (sign up at reportgem.com).
 
 Keywords: global sell-side research · investment bank research reports · investment research agent · research knowledge base · broker research API · Goldman Sachs research · Morgan Stanley research · equity research for AI · MCP server · 全球研报 · 投研智能体
 
@@ -95,7 +95,7 @@ Use the `/mcp` endpoint only, never the website page URL, then complete the OAut
 
 **Kimi Code CLI:** `/mcp-config` → add `reportgem` as an HTTP remote server → `/mcp-config login reportgem` → `/mcp` to check status.
 
-**WorkBuddy:** Connectors → search "报告驿站" → Connect.
+**WorkBuddy:** Connectors → search "ReportGem" → Connect.
 
 ## Example prompts
 
@@ -120,7 +120,7 @@ Every MCP result links back to the source on the website, where you can also sea
 | --- | --- |
 | Real-time global broker research | https://www.reportgem.com/en/research-live.html |
 | Global research archive | https://www.reportgem.com/foreign.html |
-| Chinese broker and futures research | https://www.nash-ai.cn (报告驿站) |
+| Chinese broker and futures research | https://www.reportgem.com/zh/?lang=zh |
 | China company announcements | https://www.reportgem.com/company-notices.html |
 | US SEC filings | https://www.reportgem.com/sec-filings.html |
 | Earnings calls and meeting notes | https://www.reportgem.com/en/earnings-calls.html |
@@ -130,7 +130,7 @@ Every MCP result links back to the source on the website, where you can also sea
 
 ## Contact
 
-ReportGem https://www.reportgem.com · 报告驿站 https://www.nash-ai.cn · ww@reportgem.com
+ReportGem https://www.reportgem.com · ww@reportgem.com
 
 ---
 

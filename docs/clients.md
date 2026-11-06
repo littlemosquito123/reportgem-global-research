@@ -8,7 +8,7 @@
 - 实测范围以官网 https://www.reportgem.com/mcp.html 为准（核对于 2026-09-23），下面是摘要。
 
 ## WorkBuddy（推荐，已对接连接器）
-1. 打开 WorkBuddy 客户端 →「连接器」→ 搜索「报告驿站」。
+1. 打开 WorkBuddy 客户端 →「连接器」→ 搜索「ReportGem」。
 2. 点击添加/连接，按提示打开 ReportGem 授权页，确认账号并同意授权；提示返回客户端时允许打开 WorkBuddy。
 3. 回到客户端确认连接成功、工具已启用，新建任务后用自然语言提问。
 
@@ -18,7 +18,7 @@
 适用于 Kimi Code CLI，不等同于 Kimi 普通聊天网页。
 1. 安装并启动 Kimi Code CLI，输入 `/mcp-config`，添加名为 `reportgem` 的服务，选择 HTTP 远程服务，填入 MCP 地址并保存。
 2. 输入 `/mcp-config login reportgem`，在浏览器中确认账号并授权。
-3. 输入 `/mcp` 检查连接状态，然后在会话中要求"用报告驿站查…"。
+3. 输入 `/mcp` 检查连接状态，然后在会话中要求"用 ReportGem 查…"。
 
 也可在 `~/.kimi-code/mcp.json` 的 `mcpServers` 中合并通用 JSON 配置，再执行登录和状态检查。
 
@@ -37,7 +37,7 @@ url = "https://www.reportgem.com/mcp"
 保存后执行 `codex mcp login reportgem`。ReportGem Research 插件（Codex 插件市场）审核通过后可直接安装，不需要手动配置。
 
 ## Claude
-网页 / 桌面端：Customize → Connectors →「+」→ Add custom connector，名称「报告驿站」，地址填 MCP 地址，Add 后点 Connect，在 ReportGem 官网确认授权并返回；在对话的「+」→ Connectors 中启用。团队/企业账号可能需要管理员先在组织设置中添加。
+网页 / 桌面端：Customize → Connectors →「+」→ Add custom connector，名称「ReportGem」，地址填 MCP 地址，Add 后点 Connect，在 ReportGem 官网确认授权并返回；在对话的「+」→ Connectors 中启用。团队/企业账号可能需要管理员先在组织设置中添加。
 
 Claude Code：
 ```

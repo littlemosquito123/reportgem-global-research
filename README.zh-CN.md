@@ -1,4 +1,4 @@
-# 报告驿站 ReportGem · 全球投研研报智能体与知识库（MCP）
+# ReportGem · 全球投研研报智能体与知识库（MCP）
 
 [English](README.md) | **中文**
 
@@ -17,11 +17,11 @@
 
 一键安装：点上面的 **Cursor / VS Code** 按钮即可添加（地址 `https://www.reportgem.com/mcp`），首次调用按提示完成 OAuth 登录。Cline 用户见 [llms-install.md](llms-install.md)。
 
-官网：**[ReportGem 全球研报 https://www.reportgem.com](https://www.reportgem.com)** · **[报告驿站 https://www.nash-ai.cn](https://www.nash-ai.cn)** · [MCP 接入与套餐](https://www.reportgem.com/mcp.html)
+官网：**[ReportGem 全球研报 https://www.reportgem.com](https://www.reportgem.com)** · [MCP 接入与套餐](https://www.reportgem.com/mcp.html)
 
 **定位：全球投研研报智能体和知识库。** 知识库覆盖高盛、花旗、汇丰、瑞银（UBS）、摩根大通、摩根士丹利、巴克莱、野村等数十家海外投行的研报，1,600 万+ 份，实时外文每日更新，在线研报配中文标题与中文译文；另有 200 多家中国券商研报和期货研报（500 万+ 份），以及公告、会议纪要、论文作为配套。接进 WorkBuddy、Kimi Code、Codex、Claude、扣子、Cursor 等 AI 工具，用自然语言做投研。
 
-报告驿站（中文名）与 ReportGem（英文名）是同一品牌：中文站 nash-ai.cn，国际站 reportgem.com。MCP 服务由 reportgem.com 提供，使用 ReportGem 账号（在 reportgem.com 注册）登录。
+MCP 服务由 reportgem.com 提供，使用 ReportGem 账号（在 reportgem.com 注册）登录。
 
 关键词：全球研报 · 投研智能体 · 研报知识库 · 外资投行研报 · 海外券商研报 · 高盛研报 · 大摩研报 · 投研 AI · Global sell-side research · Investment research agent · Research knowledge base · MCP server
 
@@ -63,7 +63,7 @@
 ### 接入方式
 远程 MCP 地址 `https://www.reportgem.com/mcp`，连接类型 Streamable HTTP，认证为 ReportGem 登录 + OAuth 授权。各客户端详细步骤见 https://www.reportgem.com/mcp.html（已实测范围以该页为准）。
 
-**WorkBuddy（推荐，已对接连接器）**：客户端 →「连接器」→ 搜索「报告驿站」→ 连接，按提示在 ReportGem 页面授权。
+**WorkBuddy（推荐，已对接连接器）**：客户端 →「连接器」→ 搜索「ReportGem」→ 连接，按提示在 ReportGem 页面授权。
 
 **Kimi Code CLI**：`/mcp-config` 添加名为 `reportgem` 的 HTTP 远程服务（不要选 SSE），再 `/mcp-config login reportgem` 授权，`/mcp` 查看状态。或在 `~/.kimi-code/mcp.json` 的 `mcpServers` 里合并下面的配置。
 
@@ -73,7 +73,7 @@ codex mcp add reportgem --url https://www.reportgem.com/mcp
 codex mcp login reportgem
 ```
 
-**Claude（网页/桌面）**：Customize → Connectors → Add custom connector，名称「报告驿站」，地址填上面的 MCP 地址，Connect 后授权。**Claude Code**：
+**Claude（网页/桌面）**：Customize → Connectors → Add custom connector，名称「ReportGem」，地址填上面的 MCP 地址，Connect 后授权。**Claude Code**：
 ```
 claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 ```
@@ -112,7 +112,7 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 | --- | --- |
 | 实时外文研报（当日全球投行研报） | https://www.reportgem.com/foreign-rt.html |
 | 普通外文研报（全球投行研报库） | https://www.reportgem.com/foreign.html |
-| 中国券商研报与期货研报 | https://www.nash-ai.cn （报告驿站中文站） |
+| 中国券商研报与期货研报 | https://www.reportgem.com/zh/?lang=zh |
 | 中国公司公告与调研纪要 | https://www.reportgem.com/company-notices.html |
 | 美股公告（SEC） | https://www.reportgem.com/sec-filings.html |
 | 国际会议纪要 / 中国会议纪要 | https://www.reportgem.com/events.html · https://www.reportgem.com/events-cn.html |
@@ -121,11 +121,10 @@ claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 | 全球商机查询 | https://www.reportgem.com/opportunities.html |
 | 财经新闻 / 宏观分析 | https://www.reportgem.com/headlines.html · https://www.reportgem.com/macro.html |
 | 英文站 | https://www.reportgem.com/en/research-live.html |
-| 报告驿站（中文站） | https://www.nash-ai.cn · 实时外文 https://www.nash-ai.cn/foreign-rt.html |
 
 ### 联系
-报告驿站 https://www.nash-ai.cn · ReportGem https://www.reportgem.com · ww@reportgem.com
+ReportGem https://www.reportgem.com · ww@reportgem.com
 
 ---
 
-数据规模截至 2026-10。本仓库只包含接入说明与示例，不包含任何研报数据；数据查询与阅读请使用官网 https://www.reportgem.com 或 https://www.nash-ai.cn。
+数据规模截至 2026-10。本仓库只包含接入说明与示例，不包含任何研报数据；数据查询与阅读请使用官网 https://www.reportgem.com。
