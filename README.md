@@ -15,6 +15,7 @@ A global sell-side research knowledge base exposed as a remote MCP server. Conne
 [![Official MCP Registry](https://img.shields.io/badge/MCP_Registry-com.reportgem%2Fglobal--research-6A5ACD?style=flat)](https://registry.modelcontextprotocol.io/v0/servers?search=com.reportgem%2Fglobal-research)
 [![mcp.so](https://img.shields.io/badge/mcp.so-listed-2EA44F?style=flat)](https://mcp.so/servers/reportgem-global-research)
 [![Agensi](https://img.shields.io/badge/Agensi-skill_listed-1F6FEB?style=flat)](https://www.agensi.io/skills/reportgem-research-cited-answers-from-16m-bank-reports)
+[![ReportGem Global Research MCP on mcprush](https://mcprush.com/badge/reportgem-global-research-mcp/score.svg)](https://mcprush.com/to/reportgem-global-research-mcp?ref=badge)
 
 One-click install: use the **Cursor / VS Code** buttons above (endpoint `https://www.reportgem.com/mcp`), then finish the OAuth login on first use. Cline users: see [llms-install.md](llms-install.md).
 
