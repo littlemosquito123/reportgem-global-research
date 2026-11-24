@@ -83,6 +83,11 @@ codex mcp login reportgem
 
 **Claude (web / desktop):** Customize → Connectors → Add custom connector, name it "ReportGem", paste the endpoint, then Connect and approve. Leave Client ID / Secret empty.
 
+**DeepSeek Harness (dsh ≥ 0.2.3-alpha.2):** install the [ReportGem plugin](dsh-plugin/), then click **Connect ReportGem** on its Plugins page and approve in the browser:
+```
+dsh plugin --profile web add "git+https://github.com/littlemosquito123/reportgem-global-research.git#path:/dsh-plugin"
+```
+
 **Cursor, Cline, VS Code, Windsurf and other clients** — merge into your `mcpServers` config:
 ```json
 {

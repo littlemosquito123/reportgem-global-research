@@ -1,0 +1,31 @@
+{
+  "name": "dsh-plugin-reportgem",
+  "description": "ReportGem plugin for DeepSeek Harness: search and cite 16M+ global investment-bank research reports, filings, earnings calls and charts through ReportGem's hosted MCP server, with OAuth sign-in.",
+  "version": "0.1.0",
+  "icon": "./icon.png",
+  "keywords": ["dsh-plugin", "deepseek-harness", "mcp", "investment-research", "sell-side-research", "finance"],
+  "homepage": "https://www.reportgem.com/en/mcp.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlemosquito123/reportgem-global-research.git",
+    "directory": "dsh-plugin"
+  },
+  "author": "ReportGem",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["lib", "icon.png", "cordis.patch.yml", "README.md"],
+  "engines": {
+    "dsh": ">=0.2.3-alpha.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

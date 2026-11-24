@@ -80,6 +80,11 @@ codex mcp login reportgem
 claude mcp add --transport http reportgem https://www.reportgem.com/mcp
 ```
 
+**DeepSeek Harness（dsh 0.2.3-alpha.2 及以上）**：安装 [ReportGem 插件](dsh-plugin/)，再到“插件”页点 **连接 ReportGem**，在浏览器里同意授权：
+```
+dsh plugin --profile web add "git+https://github.com/littlemosquito123/reportgem-global-research.git#path:/dsh-plugin"
+```
+
 **通用 JSON 配置（Cursor、Cline 及其他支持 Streamable HTTP + OAuth 的客户端）**：
 ```json
 {
