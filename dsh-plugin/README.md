@@ -34,9 +34,9 @@ Tools appear as `mcp__reportgem__search_research`, `search_filings`, `search_mee
 
 Installed and run on DeepSeek Harness 0.2.3-alpha.2 (macOS, web profile) on 2026-11-23: OAuth connect, tool loading and a multi-step research query with DeepSeek-V4.1-Flash all worked.
 
-## Pricing
+## Free trial and pricing
 
-You pay only for delivered research text (1 credit = 10,000 returned tokens). Titles, your questions, URLs and empty results are free. See [MCP setup & pricing](https://www.reportgem.com/en/mcp.html).
+Free to try: new ReportGem accounts get 10 free credits (about 100,000 returned tokens). After that you pay only for delivered research text (1 credit = 10,000 returned tokens). Titles, your questions, URLs and empty results are free. See [MCP setup & pricing](https://www.reportgem.com/en/mcp.html).
 
 ---
 
@@ -50,4 +50,4 @@ You pay only for delivered research text (1 credit = 10,000 returned tokens). Ti
 dsh plugin --profile web add "git+https://github.com/littlemosquito123/reportgem-global-research.git#path:/dsh-plugin"
 ```
 
-装好后在“插件”里打开 **dsh-plugin-reportgem**，点 **连接 ReportGem**，在浏览器里登录并同意授权（10 分钟内完成）。需要 DeepSeek Harness 0.2.3-alpha.2 及以上版本。新账号赠送 10 积分。
+装好后在“插件”里打开 **dsh-plugin-reportgem**，点 **连接 ReportGem**，在浏览器里登录并同意授权（10 分钟内完成）。需要 DeepSeek Harness 0.2.3-alpha.2 及以上版本。可以免费试用：新账号赠送 10 积分（约 10 万 token 返回资料），用完后按积分计费。
