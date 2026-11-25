@@ -1,6 +1,6 @@
 # ReportGem for Claude
 
-This plugin connects Claude to ReportGem's hosted MCP server so Claude can search investment research and cite it. It covers sell-side research from global investment banks (Goldman Sachs, Morgan Stanley, JPMorgan, UBS, Citi, HSBC and others), Chinese broker research, US SEC filings and China company announcements, earnings-call and meeting notes, academic papers, and charts and tables taken from reports. Every result carries a source link and a page reference, so answers can be checked against the original document.
+This plugin connects Claude to ReportGem's hosted MCP server so Claude can search investment research and cite it. It covers sell-side research from global investment banks (Goldman Sachs, Morgan Stanley and others), Chinese broker research, US SEC filings and China company announcements, earnings-call and meeting notes, academic papers, and charts and tables taken from reports. Every result carries a source link and a page reference, so answers can be checked against the original document.
 
 ## What it contains
 
@@ -21,8 +21,8 @@ The server uses OAuth. The first time Claude calls a ReportGem tool, you are ask
 
 - "Which investment banks published research on NVIDIA in the last two weeks? Give bank, date, rating, target price, report title and page."
 - "Find charts on global data-centre power demand from recent bank research, with the source report and page for each."
-- "Find HSBC's latest report on NVIDIA and verify its rating and target price with a page-cited excerpt."
-- "Read Citi's November 2026 NVIDIA report 'Jensen Is Back' page by page and list its main forecasts."
+- "Find Morgan Stanley's latest report on NVIDIA and verify its rating and target price with a page-cited excerpt."
+- "Read Morgan Stanley's 2027 US Equities Outlook page by page and list its main forecasts."
 
 ## Support
 
