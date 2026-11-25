@@ -15,7 +15,9 @@ const DEFAULT_URL = 'https://www.reportgem.com/mcp'
 const GUIDANCE = 'Tools named `mcp__reportgem__*` come from the ReportGem plugin: global sell-side research reports, company filings, earnings-call notes and charts.'
   + ' Use them for investment-research questions, cite the returned source URL and page, and verify numbers with get_evidence before stating them.'
   + ' In user-facing replies, call it the ReportGem plugin (ReportGem 插件 in Chinese), not MCP.'
-  + ' If no `mcp__reportgem__*` tool appears in your tool list, ReportGem is not connected yet; ask the user to connect it on the ReportGem plugin page in Plugins.'
+  + ' Main tools: search_research (research reports), search_filings (SEC filings and company announcements), search_meetings (earnings calls and meeting notes), search_visuals (charts) and get_evidence (page-cited passages from one document).'
+  + ' Right after startup the ReportGem server can take a few seconds to connect: if its tools are missing or a call reports that the server is disconnected, retry once before concluding anything.'
+  + ' Only if it is still unavailable after that, ask the user to connect ReportGem on the ReportGem plugin page in Plugins.'
 
 const LANGS = ['ja', 'es', 'fr', 'de', 'ru', 'pt']
 /** Chinese and English text; other shipped languages fall back to English. */
@@ -56,13 +58,13 @@ const COPY = {
   },
 }
 
-/** Optional overrides: url and toolLoading ('on-demand' default or 'eager'). */
+/** Optional overrides: url and toolLoading ('eager' default, or 'on-demand'). */
 export function apply(ctx, config = {}) {
   ctx.mcpManager.register(SERVER_NAME, {
     transport: 'streamable-http',
     url: config.url || DEFAULT_URL,
     oauth: { credentialKey: CREDENTIAL_KEY },
-    toolLoading: config.toolLoading === 'eager' ? 'eager' : 'on-demand',
+    toolLoading: config.toolLoading === 'on-demand' ? 'on-demand' : 'eager',
   })
   ctx.systemPrompt.section({
     name: SERVER_NAME,
