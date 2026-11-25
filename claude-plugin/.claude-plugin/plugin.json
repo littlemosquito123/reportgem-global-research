@@ -18,5 +18,8 @@
     "filings",
     "earnings-calls"
   ],
-  "privacyPolicyUrl": "https://www.reportgem.com/privacy/"
+  "privacyPolicyUrl": "https://www.reportgem.com/privacy/",
+  "documentationUrl": "https://www.reportgem.com/en/mcp.html",
+  "supportUrl": "https://www.reportgem.com/support/",
+  "termsOfServiceUrl": "https://www.reportgem.com/terms/"
 }
