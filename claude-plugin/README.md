@@ -20,9 +20,9 @@ The server uses OAuth. The first time Claude calls a ReportGem tool, you are ask
 ## Example prompts
 
 - "Which investment banks published research on NVIDIA in the last two weeks? Give bank, date, rating, target price, report title and page."
-- "Find the latest earnings-call notes for TSMC and summarise what management said about capex, with page references."
-- "Search charts on global data-centre power demand and show the source report and page for each."
-- "Read the most recent Goldman Sachs report on CATL page by page and list the key forecasts."
+- "Find charts on global data-centre power demand from recent bank research, with the source report and page for each."
+- "Find HSBC's latest report on NVIDIA and verify its rating and target price with a page-cited excerpt."
+- "Read Citi's November 2026 NVIDIA report 'Jensen Is Back' page by page and list its main forecasts."
 
 ## Support
 
