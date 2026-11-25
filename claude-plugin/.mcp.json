@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "reportgem": {
+      "type": "http",
+      "url": "https://www.reportgem.com/mcp"
+    }
+  }
+}

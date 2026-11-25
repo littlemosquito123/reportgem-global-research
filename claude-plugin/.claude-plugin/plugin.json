@@ -1,0 +1,22 @@
+{
+  "name": "reportgem",
+  "displayName": "ReportGem",
+  "version": "1.0.0",
+  "description": "Search investment-bank research, company filings, earnings-call notes and charts on ReportGem, with source links and page references for every result.",
+  "author": {
+    "name": "ReportGem",
+    "email": "contact@reportgem.com",
+    "url": "https://www.reportgem.com"
+  },
+  "homepage": "https://www.reportgem.com/en/mcp.html",
+  "repository": "https://github.com/littlemosquito123/reportgem-global-research",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "finance",
+    "investment-research",
+    "filings",
+    "earnings-calls"
+  ],
+  "privacyPolicyUrl": "https://www.reportgem.com/privacy/"
+}
