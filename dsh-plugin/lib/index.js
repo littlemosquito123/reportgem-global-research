@@ -10,7 +10,7 @@ export const inject = ['mcpManager', 'systemPrompt']
 
 const SERVER_NAME = 'reportgem'
 const CREDENTIAL_KEY = 'mcp-client/reportgem'
-const PACKAGE_NAME = 'dsh-plugin-reportgem'
+const PACKAGE_NAME = 'dsh-plugin-reportgem-global-research'
 const DEFAULT_URL = 'https://www.reportgem.com/mcp'
 const GUIDANCE = 'Tools named `mcp__reportgem__*` come from the ReportGem plugin: global sell-side research reports, company filings, earnings-call notes and charts.'
   + ' Use them for investment-research questions, cite the returned source URL and page, and verify numbers with get_evidence before stating them.'
@@ -26,7 +26,7 @@ function t(zh, en) {
 }
 
 const COPY = {
-  title: t('ReportGem 账号', 'ReportGem account'),
+  title: t('ReportGem 全球研报', 'ReportGem Global Research'),
   connect: t('连接 ReportGem', 'Connect ReportGem'),
   activation: {
     title: t('连接 ReportGem 账号', 'Connect your ReportGem account'),

@@ -1,6 +1,6 @@
 {
-  "name": "dsh-plugin-reportgem",
-  "description": "ReportGem plugin for DeepSeek Harness (dsh): search and cite investment-bank equity research, stock research reports, SEC filings, China company announcements, earnings-call notes and charts through ReportGem's hosted MCP server, with source links, page numbers and OAuth sign-in. Finance and investment research for DeepSeek.",
+  "name": "dsh-plugin-reportgem-global-research",
+  "description": "ReportGem 全球研报 (ReportGem Global Research) plugin for DeepSeek Harness (dsh): search and cite 16M+ global investment-bank equity research reports, stock research, SEC filings, China company announcements, earnings-call notes and charts, with source links and page numbers. 检索全球投行研报、美股 SEC 文件、A 股公告、业绩会纪要和图表，答案附原文页码。OAuth sign-in.",
   "version": "0.1.0",
   "icon": "./icon.png",
   "keywords": [
@@ -9,6 +9,8 @@
     "dsh",
     "mcp",
     "reportgem",
+    "research-reports",
+    "global-research",
     "research",
     "investment-research",
     "equity-research",
