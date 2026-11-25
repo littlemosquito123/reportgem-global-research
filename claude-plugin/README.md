@@ -4,8 +4,8 @@ This plugin connects Claude to ReportGem's hosted MCP server so Claude can searc
 
 ## What it contains
 
-- **MCP server** `reportgem` at `https://www.reportgem.com/mcp` (remote, Streamable HTTP). Tools: `search_research`, `search_filings`, `search_meetings`, `search_visuals` and `get_evidence`. All five only read data; none of them changes anything in your account or elsewhere.
-- **Skill** `reportgem-research`: tells Claude which tool fits which question, how to verify numbers with `get_evidence`, how to read a long report page by page, and how to lay out an answer with sources.
+- **MCP server** `reportgem` at `https://www.reportgem.com/mcp` (remote, Streamable HTTP). Tools: `search_research`, `search_filings`, `search_meetings`, `search_visuals` and `get_evidence`. All five only read data; none of them changes anything in your account or elsewhere. In Claude they return search results, summaries and short page-cited excerpts, not full documents; full reports stay on reportgem.com.
+- **Skill** `reportgem-research`: tells Claude which tool fits which question, how to verify numbers with `get_evidence`, how to get a document's summary, and how to lay out an answer with sources.
 
 ## Sign-in
 
@@ -22,7 +22,7 @@ The server uses OAuth. The first time Claude calls a ReportGem tool, you are ask
 - "Which investment banks published research on NVIDIA in the last two weeks? Give bank, date, rating, target price, report title and page."
 - "Find charts on global data-centre power demand from recent bank research, with the source report and page for each."
 - "Find Morgan Stanley's latest report on NVIDIA and verify its rating and target price with a page-cited excerpt."
-- "Read Morgan Stanley's 2027 US Equities Outlook page by page and list its main forecasts."
+- "Summarize Morgan Stanley's 2027 US Equities Outlook and list its main forecasts with page references."
 
 ## Support
 

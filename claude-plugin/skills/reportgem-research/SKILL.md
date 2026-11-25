@@ -19,13 +19,11 @@ Use the ReportGem MCP tools to answer research questions with traceable evidence
 4. Use `get_evidence` for material numerical claims, quotations, forecasts, and disputed conclusions.
 5. Cite the source title, date, source type, and page or evidence location whenever available.
 
-## Reading long documents
+## Summaries and excerpts
 
-- To verify one fact, number, or quotation, call `get_evidence` with `reading_mode="relevant"` and put what you are checking in `query`.
-- When the user asks you to read or summarize a whole document, call `get_evidence` with `reading_mode="sequential"`. Pass `start_page` to begin at a specific page.
-- When the response has `has_more=true`, pass `next_cursor` back unchanged in the next call and keep reading. Do not imitate full-text reading by swapping keywords to sample random pages.
-- Each call returns at most 6 passages (about 18,000 characters); continue with the cursor for the rest. State which pages you covered and which ranges remain unread.
-- Sequential reading is still subject to the user's permissions, subscription, usage quota, and audit controls. Never describe it as an unrestricted raw PDF export.
+- To verify one fact, number, or quotation, call `get_evidence` with `reading_mode="relevant"` and put what you are checking in `query`. In Claude each call returns up to 3 short page-cited excerpts.
+- For an overview of one document, call `get_evidence` with `reading_mode="summary"`. It returns the summary ReportGem already holds for that document (key takeaways or a short excerpt); some documents have none.
+- Full documents are not returned in Claude. Do not try to reconstruct a document by repeating queries; point the user to the `reportgem_url` to read it on ReportGem.
 
 ## Analysis rules
 
