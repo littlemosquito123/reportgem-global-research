@@ -1,4 +1,4 @@
-# ReportGem for Claude
+# ReportGem Research Reports for Claude
 
 This plugin connects Claude to ReportGem's hosted MCP server so Claude can search investment research and cite it. It covers sell-side research from global investment banks (Goldman Sachs, Morgan Stanley and others), Chinese broker research, US SEC filings and China company announcements, earnings-call and meeting notes, academic papers, and charts and tables taken from reports. Every result carries a source link and a page reference, so answers can be checked against the original document.
 
