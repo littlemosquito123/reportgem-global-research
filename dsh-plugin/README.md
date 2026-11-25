@@ -30,6 +30,16 @@ Ask in any session, for example:
 
 Tools appear as `mcp__reportgem__search_research`, `search_filings`, `search_meetings`, `search_visuals` and `get_evidence`. They load on demand, so the agent pulls in only the ones it needs.
 
+## Screenshots
+
+Plugin connected (DSH Plugins page):
+
+![ReportGem connected in DeepSeek Harness](https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/docs/dsh/dsh-connected.png)
+
+A query with DeepSeek-V4.1-Flash on 2026-11-24: NVIDIA notes from 14 banks in the last two weeks, with ratings, target prices, report titles and page numbers. It took 2 min 54 s.
+
+![NVIDIA research query in DeepSeek Harness](https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/docs/dsh/dsh-nvidia-query.png)
+
 ## Tested
 
 Installed and run on DeepSeek Harness 0.2.3-alpha.2 (macOS, web profile) on 2026-11-23: OAuth connect, tool loading and a multi-step research query with DeepSeek-V4.1-Flash all worked.
@@ -51,3 +61,5 @@ dsh plugin --profile web add "git+https://github.com/littlemosquito123/reportgem
 ```
 
 装好后在“插件”里打开 **dsh-plugin-reportgem**，点 **连接 ReportGem**，在浏览器里登录并同意授权（10 分钟内完成）。需要 DeepSeek Harness 0.2.3-alpha.2 及以上版本。可以免费试用：新账号赠送 10 积分（约 10 万 token 返回资料），用完后按积分计费。
+
+截图：[插件已连接](https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/docs/dsh/dsh-connected.png)、[英伟达研报查询结果](https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/docs/dsh/dsh-nvidia-query.png)（2026-11-24，DeepSeek-V4.1-Flash，14 家投行，含评级、目标价、报告标题和页码）。
